@@ -20,9 +20,9 @@ const enrolledRoutes = require('./routes/studentEnrollmentRoutes.js')
 app.use('/user', userRoutes);
 app.use('/courses', coursesRoutes);
 app.use('/enrollCourse', enrolledRoutes)
-console.log("process.env.CLOUD_NAME", process.env.CLOUD_NAME);
-console.log("process.env.API_KEY", process.env.API_KEY);
-console.log("process.env.API_SECRET", process.env.API_SECRET);
+// console.log("process.env.CLOUD_NAME", process.env.CLOUD_NAME);
+// console.log("process.env.API_KEY", process.env.API_KEY);
+// console.log("process.env.API_SECRET", process.env.API_SECRET);
 v2.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
